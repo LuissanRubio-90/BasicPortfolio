@@ -1,0 +1,18 @@
+﻿@model HomeIndex
+
+@{
+    ViewData["Title"] = "Home Page";
+
+    string ConvertirEnMayusculas(string valor)
+    {
+        return valor.ToUpper();
+    }
+
+    DateTime hoy = DateTime.Now;
+}    
+
+    <partial name="_Presentacion" />
+
+    <partial name="_Habilidades" />
+
+    <partial name="_ProjectSection" model="Model.Proyectos"/>

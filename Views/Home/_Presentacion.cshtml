@@ -1,0 +1,54 @@
+﻿
+<div class="text-center">
+
+    <!--Etiqueta de presentacion normal-->
+    @*<h1 class="display-4">Hi, I'm Luis Rubio</h1>*@
+
+    <!--Etiqueta de presentacion usando ViewBag.(propiedad dinamica)-->
+    @*<h1 class="display-4">Hi, I'm @ViewBag.Nombre</h1>*@
+    @*<h2>Nice to meet you, I'm a full stack developer specialized in .Net & Javascript tecnologies</h2>*@
+
+    <!--Etiqueta de presentacion usando ViewBag con model-->
+    @*<h1 class="display-4">Hi, I'm @Model</h1>*@
+    @*<h2>Nice to meet you, I'm a @ViewBag.Cargo specialized in .Net & Javascript tecnologies</h2>*@
+
+    <!--Etiqueta de presentacion usando Model + clase + metodo ConvertirEnMayusculas()-->
+    @*<h1 class="display-4">Hi, I'm <b>@ConvertirEnMayusculas(Model.Name)</b>!</h1>
+    <h2>Nice to meet you, I'm a @Model.Ocupation specialized in .Net & Javascript tecnologies</h2>
+
+    <img id="foto" src="~/images/profile1.jpg" alt="Imagen de perfil de Luis"/>*@
+
+    @*<h3>@hoy.ToString("dd/MM/yyyy hh:mm tt")</h3>*@
+
+    <!--Etiqueta de presentacion usando Model + clase Professional, creada en el modelo-->
+@*    <h1 class="display-4">Hi, I'm <b>@Model.Name</b>!</h1>
+    <h2>Nice to meet you, I'm a @Model.Ocupation specialized in .Net & Javascript tecnologies</h2>*@
+
+    <h1 class="display-4">Hi, I'm Luis Rubio!</h1>
+    <h2>Nice to meet you, I'm a Web Developer specialized in .Net & Javascript tecnologies</h2>
+
+    <img id="foto" src="~/images/profile3.jpg" alt="Imagen de perfil de Luis" />
+</div>
+
+<div class="text-center">
+    <img id="imagen-csharp" src="~/images/csharp.webp" />
+    <img id="imagen-node" src="~/images/node.png" />
+    <img id="imagen-js" src="~/images/js.png" />
+    <img id="imagen-angular" src="~/images/angular.png" />
+</div>
+
+<div class="row justify-content-center text-center bg-primary">
+    <div class="col col-md-7 seccion-bienvenida">
+        <h2>Welcome to my portfolio!</h2>
+        <p>
+            I've been working professionally since 2022. I am a 8th semester Engineering student,
+            I also have tecnical experience with Javascript with JS libraries like JQuery, Angular.Js,
+            Node.Js, MongoDB and Typescript.
+        </p>
+        <p>
+            I also have strong knowledge in .Net Core/C#, SQL Server, Power BI, Docker with Kubernet and Jenkins
+            and I currently work with personal projects.
+        </p>
+    </div>
+</div>
+
